@@ -62,3 +62,41 @@ def getArmstrongNumber(num):
 
 print(getArmstrongNumber(111111))
 
+
+#prog for palindrome number
+def getPalindromeNumber(num):
+    orig = num
+    reverse = 0
+
+    while num > 0:
+        digit = num % 10   
+        reverse = reverse * 10 + digit
+        num = num // 10
+    return "palindrome number" if orig == reverse else "not palindrome number"
+
+print(getPalindromeNumber(121))
+
+
+#prog for palindrome string
+def getPalindromeString(str):
+    orig = str
+    reverse = ""
+
+    for i in range(len(str) -1, -1, -1):
+        reverse += str[i]
+    return "palindrome string" if reverse == orig else "not palindrome string"
+
+print(getPalindromeString("madam"))
+
+
+#prog for palindrome using slicing operator
+def getPalindromeStringSlicing(str):
+    return "palindrom string slicing" if str == str[::-1] else "not palindrome string slicing"
+
+print(getPalindromeStringSlicing("madam"))
+
+
+#prog for sum of its digits
+def sumDigits(num):
+    sum = 0
+    
