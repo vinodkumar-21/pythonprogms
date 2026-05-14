@@ -100,3 +100,26 @@ print(getPalindromeStringSlicing("madam"))
 def sumDigits(num):
     sum = 0
     
+    while num > 0:
+        digits = num % 10
+        sum += digits
+        num = num // 10
+    return sum
+print(sumDigits(123))
+
+# prog to check prime no 
+def is_prime(num):
+
+    if num <= 1:
+        return False
+
+    for i in range(2, num):
+
+        if num % i == 0:
+            return False
+
+    return True
+
+
+print(is_prime(7))
+print(is_prime(10))
