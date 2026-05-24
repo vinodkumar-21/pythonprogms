@@ -1,4 +1,5 @@
 """
+Memory efficient iterator.
 Returns values one by one using yield.
 
 A generator is a special function that uses yield instead of return. 
