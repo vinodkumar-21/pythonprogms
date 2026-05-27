@@ -38,11 +38,11 @@ print(getTable(5))
 # prog print armstrong no using number convert into string
 def getArmstrong(num):
     digits = str(num)
-    n = len(digits)
+    length = len(digits)
     sum = 0
 
     for digit in digits:
-        sum = sum + int(digit) ** n
+        sum = sum + int(digit) ** length
     return "armstrong no" if num == sum else "not armstrong no"
 
 print(getArmstrong(153))
