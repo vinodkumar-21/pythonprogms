@@ -24,7 +24,7 @@ print(result)
 
 # Write a Python program to find numbers that are greater than 10 and have odd first and last digits.
 # Input:
-# [1, 3, 79, 10, 4, 1]
+# [1, 3, 79, 10, 4, 1, 39]
 # Output:
 # [79, 39]
 # Input:
