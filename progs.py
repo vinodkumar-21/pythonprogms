@@ -147,3 +147,68 @@ for i in lst:
         left += 1
         right -= 1
 print(lst)
+
+
+# prog to count records by status from a list of dict
+records = [
+	{"id":1,"status":"open"},
+	{"id":2,"status":"close"},
+	{"id":3,"status":"open"},
+]
+
+status_count = []
+for record  in records:
+	status = record['status']
+	status_count["status"]=status_count.get(status,0) + 1
+
+print(status_count)
+
+# prog to merge two sorted lists into a single sorted list
+a = [1, 2, 5]
+b = [0, 2, 4, 6]
+
+result = sorted(a + b)
+print(result)
+
+# prog to merge two sorted lists into a single sorted list
+a = [1, 2, 5]
+b = [0, 2, 4, 6]
+
+i = j = 0
+result = []
+
+while i < len(a) and j < len(b):
+    if a[i] <= b[j]:
+        result.append(a[i])
+        i += 1
+    else:
+        result.append(b[j])
+        j += 1
+
+result.extend(a[i:])
+result.extend(b[j:])
+
+print(result)
+
+# prog to find missing numbers in a list
+a = [4, 5, 3, 2, 6, 8]
+
+result = []
+
+for i in range(1,max(a)+1):
+	if i not in a:
+		result.append(i)
+print(result)
+
+# prog to add zeroes to the end of a list
+lst = [0,2,"abc",3.4,0,2,"dgf"]
+non_zero = []
+zero_count = 0
+for i in lst:
+	if i == 0:
+		zero_count +=1
+	else:
+		non_zero.append(i)
+non_zero.extend([0]*zero_count)
+
+print(non_zero)

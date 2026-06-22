@@ -38,14 +38,15 @@ class Mother:
 
 
 class Child(Father, Mother):
-    print("this is child class")
-    # pass
-
+   def child(self):
+        print("this is child called")
+        self.business()
+        self.cooking()
 
 c = Child()
-
-c.business()
-c.cooking()
+c.child()
+# c.business()
+# c.cooking()
 
 
 
