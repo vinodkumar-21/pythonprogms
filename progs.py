@@ -189,12 +189,12 @@ result.extend(b[j:])
 print(result)
 
 # prog to find missing numbers in a list
-a = [4, 5, 3, 2, 6, 8]
+lst = [4, 5, 3, 2, 6, 8]
 
 result = []
 
-for i in range(1,max(a)+1):
-	if i not in a:
+for i in range(1,max(lst)+1):
+	if i not in lst:
 		result.append(i)
 print(result)
 
