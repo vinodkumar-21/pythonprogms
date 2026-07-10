@@ -125,16 +125,14 @@ def print_data():
 print_data()
 
 # prog to print all non repetitiong character
-string = "hello world"
-non_repeating = []
-
-def print_non_repeating():
+def print_non_repeating(string):
+    non_repeating = []
     for char in string:
         if string.count(char) == 1:
             non_repeating.append(char)
     print(non_repeating)
 
-print_non_repeating()
+print_non_repeating('hello world')
 
 # prog to reverse a list using recursion
 lst = [1, 2, 3, 4, 5]
